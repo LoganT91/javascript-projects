@@ -5,7 +5,14 @@ function selectRandomEntry(idNumbers) {
 } 
 
 // Code your buildCrewArray function here:
-
+let selectCrew = [];
+function buildCrewArray(animals, selectArr) {
+  for (i = 0; i < selectArr.length; i++) {
+    if (selectArr[i] === animals[i]['astronautID']) {
+      selectCrew.push(animals[i]);
+    }
+  }
+}
 
 let idNumbers = [291, 414, 503, 599, 796, 890];
 
@@ -62,3 +69,4 @@ for (i = 0; i < 3; i++) {
   selectArr.push(id);
 }
 console.log(selectArr);
+console.log(selectCrew);
