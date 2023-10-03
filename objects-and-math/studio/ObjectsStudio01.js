@@ -1,5 +1,8 @@
 // Code your selectRandomEntry function here:
-
+function selectRandomEntry(idNumbers) {
+  let selection = Math.floor(Math.random()*idNumbers.length);
+  return idNumbers[selection];
+} 
 
 // Code your buildCrewArray function here:
 
@@ -53,3 +56,9 @@ let candidateF = {
 let animals = [candidateA,candidateB,candidateC,candidateD,candidateE,candidateF];
 
 // Code your template literal and console.log statements:
+let selectArr = []
+for (i = 0; i < 3; i++) {
+  let id = selectRandomEntry(idNumbers);
+  selectArr.push(id);
+}
+console.log(selectArr);
