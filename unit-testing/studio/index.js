@@ -6,10 +6,12 @@ let launchcode = {
   programsOffered: ['Web Developement', 'Data Analysis', 'Liftoff']
 };
 
-function launchOutput(){
-  let num;
+function launchOutput(num){
   if (num % 2 === 0){
     return "Launch!";
+  };
+  if (num % 3 === 0){
+    return "Code!"
   };
 };
 
