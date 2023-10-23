@@ -8,6 +8,7 @@ class CrewCandidate {
         this.scores = scores
     }
     addingScores(){
+        let scores = [''];
         let newScore = input.question(`What is your newest score?
         Enter Here: `);
         if(newScore <= 100 && newScore >= 0){
