@@ -7,7 +7,15 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <script src="script.js"></script>
+    <script>
+      window.addEventListener("load", function() {
+    fetch("https://handlers.education.launchcode.org/static/astronauts.json").then( function(response) {
+        response.json().then( function(json) {
+        const div = document.getElementById("");
+        });
+    });
+});
+    </script>
     <h1>Astronauts</h1>
     <div id="container">
       <div class="astronaut">
@@ -20,7 +28,7 @@
             </ul>
         </div>
         <img class="avatar" src="images/mae-jemison.jpg">
-        
+
     </div>
     </div>
   </body>
